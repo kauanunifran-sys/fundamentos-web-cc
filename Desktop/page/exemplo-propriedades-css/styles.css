@@ -6,8 +6,8 @@
 
 body {
     font-family: 'Segoe UI', Arial,  sans-serif;
-    color: #222;
-    background-color: floralwhite;
+    color: #504f4f;
+    background-color: rgb(214, 208, 195);
     line-height: 1.6;
 }
 
@@ -50,7 +50,7 @@ nav ul {
 }
 
 nav {
-    background-color: darkslategray;
+    background-color: gray;
 }
 
 nav li { 
@@ -65,4 +65,61 @@ nav li {
 
 #vantagens li{
     margin-bottom: 8px;
+}
+
+table {
+    width: 98%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #1f1e1e;
+
+}
+
+thead {
+    background-color: gray;
+    color: white;
+}
+
+tbody tr:nth-child(even){
+    background-color: lightgrey;
+}
+
+main section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgb(0, 0, 0, 0.1);
+}
+
+header {
+    background-color: gray;
+    color: white;
+    padding: 20px;
+    text-align: center;
+
+}
+
+header .logo {
+    margin-bottom: 10px;
+
+}
+
+header .logo img {
+    width: 90px;
+    margin-right: 10px;
+    vertical-align: baseline;
+
+
+}
+
+footer {
+    background-color: gray;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
