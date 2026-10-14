@@ -97,21 +97,60 @@
             </iframe>
         </section>
 
-        <section id="exeplo-canvas">
-            <canvas id="seloEvento" width="200" height="200">
-                
-            </canvas>
+        <section>
+            <!-- O elemento canvas precisa estar presente para o script desenhar nele -->
+            <canvas id="seloEvento" width="200" height="200"></canvas>
         </section>
+        
     </main>
+
+
+    <section>
+        <script>
+            const canvas = document.getElementById('seloEvento');
+            const ctx = canvas.getContext('2d');
+
+            // Fundo circular
+            ctx.beginPath();
+            ctx.arc(100, 100, 90, 0, Math.PI * 2);
+            ctx.fillStyle = '#2c3e50';
+            ctx.fill();
+
+            // Borda decorativa
+            ctx.beginPath();
+            ctx.arc(100, 100, 90, 0, Math.PI * 2);
+            ctx.strokeStyle = '#f4d03f';
+            ctx.lineWidth = 6;
+            ctx.stroke();
+
+            // Texto central
+            ctx.fillStyle = '#ffffff';
+            ctx.font = 'bold 20px Arial';
+            ctx.textAlign = 'center';
+            ctx.fillText('VIP', 100, 108);
+        </script>
+
+        <section>
+            <div class="eventos-container">
+                <div class="evento-item">
+                    <h3>Show de Rock</h3>
+                    <p>25/09/2026, Arena Franca</p>
+                </div>
+                <div class="evento-item">
+                    <h3>Teatro: A Comédia da Vida</h3>
+                    <p>30/09/2026, Teatro Municipal</p>
+                </div>
+                <div class="evento-item">
+                    <h3>Festival Gastronômico</h3>
+                    <p>05/10/2026, Praça Central</p>
+                </div>
+            </div>
+        </section>
+    </section>
 
     <footer>
         <p>&copy; 2026 IngressosFácil - Todos os direitos reservados</p>
     </footer>
 
-    <script>
-        
-    </script>
-
 </body>
-</html>
 </html>
